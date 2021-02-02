@@ -10,4 +10,4 @@ Here's a starter list of developer norms:
 1. Provide descriptive commit messages,
 1. Write self documenting code. Use descriptive variable and function names. Avoid unnecessary name shortening,
 1. Don't leave dead/commented out code behind. If you see such code, delete it,
-1. Write automated tests to cover critical integration points and functionality.
+1. Write automated tests to cover critical integration points and functionality. 
