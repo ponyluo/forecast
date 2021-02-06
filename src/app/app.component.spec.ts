@@ -1,14 +1,14 @@
 import { TestBed } from '@angular/core/testing'
 import { RouterTestingModule } from '@angular/router/testing'
+import { createComponentMock } from 'angular-unit-test-helper'
 
 import { AppComponent } from './app.component'
-import { createComponentMock } from 'angular-unit-test-helper'
 
 describe('AppComponent', () => {
   beforeEach(async () => {
     await TestBed.configureTestingModule({
       imports: [RouterTestingModule],
-      declarations: [AppComponent,createComponentMock('CurrentWeatherComponent')],
+      declarations: [AppComponent, createComponentMock('CurrentWeatherComponent')],
     }).compileComponents()
   })
 
@@ -28,8 +28,6 @@ describe('AppComponent', () => {
     const fixture = TestBed.createComponent(AppComponent)
     fixture.detectChanges()
     const compiled = fixture.nativeElement
-    expect(compiled.querySelector('.h1').textContent).toContain(
-      'Local Weather App'
-    )
+    expect(compiled.querySelector('.h1').textContent).toContain('Local Weather App')
   })
 })
