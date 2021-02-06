@@ -21,17 +21,7 @@ export class CurrentWeatherComponent implements OnInit {
       description: '',
     }
   }
-  /* constructor() {
-    this.current = {
-      city: 'Bethesda',
-      country: 'US',
-      date: new Date(),
-      image: 'assets/img/sunny.svg',
-      temperature: 72,
-      description: 'sunny',
-      } as ICurrentWeather
-  }
-*/
+
   ngOnInit() {
     this.weatherService
       .getCurrentWeather('Bethesda', 'US')
